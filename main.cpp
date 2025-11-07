@@ -52,6 +52,7 @@ void BST<T>::preorder(BSTNode<T> *nodePtr)
         preorder(nodePtr->left);
         preorder(nodePtr->right);
     }
+    std::cout << std::endl;
 }
 
 template<class T>
@@ -94,6 +95,8 @@ int main()
     bst.insert(node2);
     bst.insert(node3);
     bst.insert(node4);
+
+    std::cout << "Displaying nodes via pre-order traversal" << std::endl;
 
     bst.preorder();
 
